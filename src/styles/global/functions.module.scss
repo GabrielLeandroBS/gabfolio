@@ -1,0 +1,40 @@
+@use './variables.module.scss' as variables;
+/* ------------------------------------------------------------ *\
+  Functions
+  @see https://sass-lang.com/documentation/at-rules/function
+\* --------------------------------.---------------------------- */
+
+@use 'sass:map';
+@use 'sass:meta';
+@use 'sass:math';
+
+/*
+ * Remove unit from a given value.
+ */
+@function strip-unit($value) {
+  @if (meta.type-of($value) == 'number' and not math.is-unitless($value)) {
+    @return math.div($value, $value * 0 + 1);
+  }
+  @return $value;
+}
+
+/*
+ * Convert px to rem.
+ */
+@function rem($value: 16px, $base: variables.$font-size-base-px) {
+  @return math.div(strip-unit($value), strip-unit($base)) * 1rem;
+}
+
+/*
+ * Get a color from mapped value.
+ */
+@function color($key, $palette: variables.$colors) {
+  @return map.get($palette, $key);
+}
+
+/*
+ * Get font-weight from mapped value.
+ */
+@function font-weight($key, $weights: variables.$font-weights) {
+  @return map.get($weights, $key);
+}

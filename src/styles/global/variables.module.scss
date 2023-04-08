@@ -1,0 +1,60 @@
+/*
+  READ FIRST!!!
+  1. Some variables is available on the project that will not be listed here.
+  2. To know what is these variables you can go to frontend.config.scss file.
+  3. Keep in mind that this file SHOULD be modified as necessary to the project that you're working on.
+  4. You can also create your own variables for the project.
+  5. Don't be afraid to try something new. :)
+*/
+
+$variable-prefix: '';
+
+// Breakpoint variables for responsive design
+$breakpoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 1200px,
+  xl: 1600px,
+);
+
+// Base font size
+// Was needed to set in px to be used internaly. Bootstrap
+// has a $font-size-base that is 1rem (equals 16px).
+$font-size-base-px: 16px;
+
+/* ------------------------------------------------------------ *\
+  Colors
+\* ------------------------------------------------------------ */
+// We are removing the grays colors by default.
+// You can set it if needed.
+$grays: ();
+
+// We are re-assigning the $color to $colors because
+// the bootstrap use $colors internally and WP Emerge use $color
+// because he generate each color variable.
+$colors: (
+  'black': #000,
+  'white': #fff,
+  'gray-500': #cdcdce,
+);
+
+/* ------------------------------------------------------------ *\
+  Typography
+  Font families, font sizes, line heights...
+\* ------------------------------------------------------------ */
+$font-family-base: 'Inter';
+
+// List font weights in project
+$font-weights: (
+  'thin': 100,
+  'extra-light': 200,
+  'light': 300,
+  'regular': 300,
+  'normal': 300,
+  'medium': 500,
+  'semi-bold': 600,
+  'bold': 700,
+  'extra-bold': 800,
+  'black': 900,
+);
