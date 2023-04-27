@@ -1,20 +1,16 @@
-import base from '../styles/global/base.module.scss';
+import base from "../styles/global/base.module.scss";
 
 export const metadata = {
   title: {
-    default: 'Página inicial | Gabriel Leandro',
-    template: '%s | Gabriel Leandro',
+    default: "Página inicial | Gabriel Leandro",
+    template: "%s | Gabriel Leandro",
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html className={base.layout} lang="en">
-      <body>{children}</body>
-    </html>
-  );
-}
+const RootLayout = ({ children }: { children: React.ReactNode }) => (
+  <html className={base.layout} lang="en">
+    <body>{children}</body>
+  </html>
+);
+
+export default RootLayout;
