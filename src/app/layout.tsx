@@ -1,4 +1,4 @@
-import base from "../styles/global/base.module.scss";
+import base from "../styles/base.module.scss";
 
 export const metadata = {
   title: {

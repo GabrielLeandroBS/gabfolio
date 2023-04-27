@@ -1,6 +1,6 @@
 "use client";
 import * as Avatar from "@radix-ui/react-avatar";
-import styles from "../../styles/components/avatar.module.scss";
+import styles from "./avatar.module.scss";
 
 const AvatarComponent = () => (
   <Avatar.Root className={styles.avatar}>

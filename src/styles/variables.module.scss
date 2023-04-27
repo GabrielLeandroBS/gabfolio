@@ -30,7 +30,7 @@ $font-size-base-px: 16px;
 // You can set it if needed.
 $grays: ();
 
-// We are re-assigning the $color to $colors because
+// We are re-assigning the $color to $colors because  
 // the bootstrap use $colors internally and WP Emerge use $color
 // because he generate each color variable.
 $colors: (

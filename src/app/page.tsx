@@ -1,9 +1,9 @@
-import AvatarComponent from "@/components/avatar";
+import Link from "next/link";
 
 const Home = () => (
   <section>
     <h1>Montar botão</h1>
-    <AvatarComponent />
+    <Link href={'/about'}>About</Link>
   </section>
 );
 
