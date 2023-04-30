@@ -1,5 +1,9 @@
 import type { Preview } from "@storybook/react";
-import '../src/styles/base.module.scss';
+import React from "react";
+
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 const preview: Preview = {
   parameters: {
@@ -11,6 +15,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <div className={inter.className}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export default preview;

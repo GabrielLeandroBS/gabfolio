@@ -1,0 +1,19 @@
+@use "../../../styles/mixins/heading.module.scss" as mixin;
+
+.c-heading {
+  &--h1 {
+    @include mixin.display-1();
+  }
+
+  &--h2 {
+    @include mixin.display-2();
+  }
+
+  &--h3 {
+    @include mixin.display-3();
+  }
+
+  &--h4 {
+    @include mixin.display-4();
+  }
+}
