@@ -1,0 +1,18 @@
+@use "../functions.module.scss" as function;
+@use "../mixins/core.module.scss" as mixin;
+
+@mixin text-100 {
+  @include mixin.font-size-line-height(function.rem(16px), function.rem(24px));
+}
+
+@mixin text-200 {
+  @include mixin.font-size-line-height(function.rem(18px), function.rem(26px));
+}
+
+@mixin text-300 {
+  @include mixin.font-size-line-height(function.rem(20px), function.rem(28px));
+}
+
+@mixin text-400 {
+  @include mixin.font-size-line-height(function.rem(22px), function.rem(30px));
+}

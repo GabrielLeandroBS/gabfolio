@@ -3,13 +3,69 @@
 
 @mixin display-1 {
   @include mixin.font-size-line-height(function.rem(40px), function.rem(48px));
+  font-weight: function.font-weight("medium");
 
-
-  @include mixin.from-breakpoint(md){
-    @include mixin.font-size-line-height(function.rem(58px), function.rem(66px));
+  @include mixin.from-breakpoint(md) {
+    @include mixin.font-size-line-height(
+      function.rem(58px),
+      function.rem(66px)
+    );
   }
 
   @include mixin.from-breakpoint(lg) {
-    @include mixin.font-size-line-height(function.rem(68px), function.rem(78px));
+    @include mixin.font-size-line-height(
+      function.rem(68px),
+      function.rem(78px)
+    );
+  }
+}
+
+@mixin display-2 {
+  @include mixin.font-size-line-height(function.rem(35px), function.rem(43px));
+  font-weight: function.font-weight("medium");
+
+  @include mixin.from-breakpoint(md) {
+    @include mixin.font-size-line-height(
+      function.rem(45px),
+      function.rem(53px)
+    );
+  }
+
+  @include mixin.from-breakpoint(lg) {
+    @include mixin.font-size-line-height(
+      function.rem(54px),
+      function.rem(62px)
+    );
+  }
+}
+
+@mixin display-3 {
+  @include mixin.font-size-line-height(function.rem(26px), function.rem(34px));
+  font-weight: function.font-weight("medium");
+
+  @include mixin.from-breakpoint(md) {
+    @include mixin.font-size-line-height(
+      function.rem(32px),
+      function.rem(40px)
+    );
+  }
+}
+
+@mixin display-4 {
+  @include mixin.font-size-line-height(function.rem(20px), function.rem(28px));
+  font-weight: function.font-weight("medium");
+
+  @include mixin.from-breakpoint(md) {
+    @include mixin.font-size-line-height(
+      function.rem(22px),
+      function.rem(30px)
+    );
+  }
+
+  @include mixin.from-breakpoint(lg) {
+    @include mixin.font-size-line-height(
+      function.rem(28px),
+      function.rem(36px)
+    );
   }
 }
