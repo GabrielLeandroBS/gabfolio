@@ -1,4 +1,4 @@
-@use './variables.module.scss' as variables;
+@use "../variables.module.scss" as variables;
 
 /* ------------------------------------------------------------ *\
   Mixins Core
@@ -161,11 +161,11 @@
 }
 
 // Render a circle.
-@mixin circle($width, $background-color: '') {
+@mixin circle($width, $background-color: "") {
   @include width-height($width);
   border-radius: 100%;
 
-  @if $background-color != '' {
+  @if $background-color != "" {
     background-color: $background-color;
   }
 }
@@ -259,7 +259,7 @@
   text-decoration: none;
   transform-style: preserve-3d;
   transition-property: background-color, color, transform;
-  transition:  0.3s ease;
+  transition: 0.3s ease;
   user-select: none;
   vertical-align: middle;
   will-change: background-color;

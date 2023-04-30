@@ -1,0 +1,15 @@
+@use "../functions.module.scss" as function;
+@use "../mixins/core.module.scss" as mixin;
+
+@mixin display-1 {
+  @include mixin.font-size-line-height(function.rem(40px), function.rem(48px));
+
+
+  @include mixin.from-breakpoint(md){
+    @include mixin.font-size-line-height(function.rem(58px), function.rem(66px));
+  }
+
+  @include mixin.from-breakpoint(lg) {
+    @include mixin.font-size-line-height(function.rem(68px), function.rem(78px));
+  }
+}

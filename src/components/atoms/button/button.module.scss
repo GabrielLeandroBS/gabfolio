@@ -1,5 +1,5 @@
 @use "../../../styles/functions.module.scss" as function;
-@use "../../../styles/mixins.module.scss" as mixin;
+@use "../../../styles/mixins/core.module.scss" as mixin;
 
 .c-button {
   @include mixin.btn();
