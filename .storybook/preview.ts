@@ -1,7 +1,5 @@
 import type { Preview } from "@storybook/react";
 import '../src/styles/base.module.scss';
-// import '../src/styles/functions.module.scss';
-// import '../src/styles/mixins.module.scss';
 
 const preview: Preview = {
   parameters: {

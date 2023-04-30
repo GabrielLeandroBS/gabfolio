@@ -7,9 +7,10 @@
   5. Don't be afraid to try something new. :)
 */
 
-$variable-prefix: '';
-
-// Breakpoint variables for responsive design
+/* ------------------------------------------------------------ *\
+  Breakpoints
+  Breakpoint variables for responsive design
+\* ------------------------------------------------------------ */
 $breakpoints: (
   xs: 0px,
   sm: 420px,
@@ -18,56 +19,50 @@ $breakpoints: (
   xl: 1600px,
 );
 
-// Base font size
-// Was needed to set in px to be used internaly. Bootstrap
-// has a $font-size-base that is 1rem (equals 16px).
+/* ------------------------------------------------------------ *\
+  Font size
+  Base font size
+\* ------------------------------------------------------------ */
 $font-size-base-px: 16px;
 
 /* ------------------------------------------------------------ *\
   Colors
+  RGB, RGBA, HEXADECIMAL...
 \* ------------------------------------------------------------ */
-// We are removing the grays colors by default.
-// You can set it if needed.
-$grays: ();
-
-// We are re-assigning the $color to $colors because  
-// the bootstrap use $colors internally and WP Emerge use $color
-// because he generate each color variable.
 $colors: (
-  'primary': #5B46FF,
-  'color-1': #503DE8,
-  'color-2': #AEE2FF,
-  'color-3': #98D9FF,
-  'color-4': #FFAFC2,
-  'color-5': #FFCBD8,
-  'color-6': #FFC329,
-  'color-7': #FDB52A,
-
-  'neutral-100': #FFFFFF,
-  'neutral-200': #F7F7FC,
-  'neutral-300': #E2E2ED,
-  'neutral-400': #C8C8D6,
-  'neutral-500': #7D7D8E,
-  'neutral-600': #535366,
-  'neutral-700': #29293E,
-  'neutral-800': #0A0A1B,
+  "primary": #5b46ff,
+  "color-1": #503de8,
+  "color-2": #aee2ff,
+  "color-3": #98d9ff,
+  "color-4": #ffafc2,
+  "color-5": #ffcbd8,
+  "color-6": #ffc329,
+  "color-7": #fdb52a,
+  "neutral-100": #ffffff,
+  "neutral-200": #f7f7fc,
+  "neutral-300": #e2e2ed,
+  "neutral-400": #c8c8d6,
+  "neutral-500": #7d7d8e,
+  "neutral-600": #535366,
+  "neutral-700": #29293e,
+  "neutral-800": #0a0a1b,
 );
 
 /* ------------------------------------------------------------ *\
   Typography
   Font families, font sizes, line heights...
 \* ------------------------------------------------------------ */
-$font-family-base: 'Inter';
+$font-family-base: "Inter";
 
 // List font weights in project
 $font-weights: (
-  'thin': 100,
-  'extra-light': 200,
-  'light': 300,
-  'regular': 400,
-  'medium': 500,
-  'semi-bold': 600,
-  'bold': 700,
-  'extra-bold': 800,
-  'black': 900,
+  "thin": 100,
+  "extra-light": 200,
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "extra-bold": 800,
+  "black": 900,
 );
