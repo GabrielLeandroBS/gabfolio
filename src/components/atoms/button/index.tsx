@@ -1,6 +1,6 @@
-import { ButtonProps } from "../../../../types/button.type";
+import { ButtonProps } from "@/types/button.type";
 import Link from "next/link";
-import React from "react";
+
 import styles from "./button.module.scss";
 
 const Button = ({ primary = false, size = "medium", label, url = "#" }: ButtonProps) => {

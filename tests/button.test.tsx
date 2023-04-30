@@ -2,7 +2,7 @@ import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 import Button from "@/components/atoms/button";
-import { ButtonProps } from "../types/button.type";
+import { ButtonProps } from "@/types/button.type";
 
 describe("Component Button", () => {
   it("Should render with correct props", () => {
