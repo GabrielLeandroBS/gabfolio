@@ -1,0 +1,79 @@
+@use "../../../styles/functions.module.scss" as function;
+@use "../../../styles/mixins.module.scss" as mixin;
+
+.c-button {
+  @include mixin.btn();
+  @include mixin.font-size-line-height(function.rem(18px), function.rem(26px));
+  border-radius: function.rem(15px);
+  padding: function.rem(26px) function.rem(35px);
+  width: 100%;
+
+  &:hover {
+    transform: scale3d(0.94, 0.94, 1.01);
+  }
+
+  @include mixin.from-breakpoint(sm) {
+    width: max-content;
+  }
+
+  @include mixin.from-breakpoint(md) {
+    padding: function.rem(26px) function.rem(40px);
+    border-radius: function.rem(20px);
+  }
+
+  &--primary {
+    background-color: function.color("neutral-800");
+    color: function.color("neutral-100");
+    font-weight: function.font-weight("bold");
+
+    &:hover {
+      background-color: function.color("color-1");
+    }
+  }
+
+  &--secondary {
+    background-color: function.color("neutral-100");
+    border: function.rem(1px) solid function.color("neutral-300");
+    box-shadow: function.rem(0px) function.rem(4px) function.rem(10px)
+      rgba(function.color("neutral-300"), 0.3);
+
+    color: function.color("neutral-800");
+    font-weight: function.font-weight("bold");
+
+    &:hover {
+      background-color: function.color("neutral-800");
+      color: function.color("neutral-100");
+      border-color: function.color("neutral-800");
+    }
+  }
+
+  &--small {
+    @include mixin.font-size-line-height(
+      function.rem(15px),
+      function.rem(23px)
+    );
+    border-radius: function.rem(10px);
+    padding: function.rem(16px) function.rem(25px);
+
+    @include mixin.from-breakpoint(md) {
+      border-radius: function.rem(10px);
+    }
+  }
+
+  &--large {
+    @include mixin.font-size-line-height(
+      function.rem(20px),
+      function.rem(28px)
+    );
+
+    padding: function.rem(26px) function.rem(42px);
+
+    @include mixin.from-breakpoint(md) {
+      @include mixin.padding-x(50px);
+    }
+
+    @include mixin.from-breakpoint(lg) {
+      padding: function.rem(28px) function.rem(57px);
+    }
+  }
+}

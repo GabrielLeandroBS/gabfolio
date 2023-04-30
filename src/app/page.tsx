@@ -1,9 +1,9 @@
-import Link from "next/link";
+import Button from "@/components/atoms/button";
 
 const Home = () => (
   <section>
     <h1>Montar botão</h1>
-    <Link href={'/about'}>About</Link>
+    <Button url="/" label="Test" size="medium" primary/>
   </section>
 );
 
