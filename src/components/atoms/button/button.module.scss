@@ -4,16 +4,12 @@
 $primary: true;
 
 .c-button {
-  @include mixin.btn;
-  @include mixin.font-size-line-height(function.rem(18px), function.rem(26px));
-
   border-radius: function.rem(15px);
   padding: function.rem(24px) function.rem(33px);
   width: 100%;
 
-  &:hover {
-    transform: scale3d(0.94, 0.94, 1.01);
-  }
+  @include mixin.btn;
+  @include mixin.font-size-line-height(function.rem(18px), function.rem(26px));
 
   @include mixin.from-breakpoint(sm) {
     width: max-content;
@@ -22,6 +18,10 @@ $primary: true;
   @include mixin.from-breakpoint(md) {
     border-radius: function.rem(20px);
     padding: function.rem(26px) function.rem(39px);
+  }
+
+  &:hover {
+    transform: scale3d(0.94, 0.94, 1.01);
   }
 
   &--primary {
@@ -44,19 +44,19 @@ $primary: true;
 
     &:hover {
       background-color: function.color('neutral-800');
-      color: function.color('neutral-100');
       border-color: function.color('neutral-800');
+      color: function.color('neutral-100');
     }
   }
 
   &--small {
+    border-radius: function.rem(10px);
+    padding: function.rem(15px) function.rem(24px);
+
     @include mixin.font-size-line-height(
       function.rem(15px),
       function.rem(24px)
     );
-
-    border-radius: function.rem(10px);
-    padding: function.rem(15px) function.rem(24px);
 
     @include mixin.from-breakpoint(md) {
       border-radius: function.rem(15px);
@@ -66,12 +66,12 @@ $primary: true;
   }
 
   &--large {
+    padding: function.rem(22px) function.rem(41px);
+
     @include mixin.font-size-line-height(
       function.rem(20px),
       function.rem(28px)
     );
-
-    padding: function.rem(22px) function.rem(41px);
 
     @include mixin.from-breakpoint(md) {
       @include mixin.padding-x(function.rem(50px));

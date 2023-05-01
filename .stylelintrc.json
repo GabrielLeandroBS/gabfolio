@@ -1,19 +1,11 @@
 {
-  "extends": [ "stylelint-config-standard-scss"],
-  "plugins": [
-		"stylelint-order"
-	],
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
   "rules": {
     "scss/selector-no-redundant-nesting-selector": true,
     "color-function-notation": null,
     "scss/at-extend-no-missing-placeholder": null,
-    "order/order": [
-			"custom-properties",
-			"declarations"
-		],
-		"order/properties-order": [
-			"width",
-			"height"
-		]
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-alphabetical-order": true
   }
 }
