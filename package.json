@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --watch",
-    "lint:eslint": "next lint",
+    "lint": "next lint",
     "lint:stylelint": "stylelint --ignore-path .gitignore **/*.scss --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
