@@ -259,7 +259,8 @@
   text-decoration: none;
   transform-style: preserve-3d;
   transition-property: background-color, color, transform, width, font-weight;
-  transition: 0.3s ease;
+  transition-duration: 0.3;
+  transition-timing-function: ease;
   user-select: none;
   vertical-align: middle;
   will-change: background-color;

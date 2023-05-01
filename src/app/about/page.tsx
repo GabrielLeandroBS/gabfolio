@@ -1,5 +1,4 @@
 import Button from "@/components/atoms/button";
-import Link from "next/link";
 
 export const metadata = {
   title: "About",
