@@ -1,4 +1,5 @@
 @use './variables.module.scss' as variables;
+
 /* ------------------------------------------------------------ *\
   Functions
   @see https://sass-lang.com/documentation/at-rules/function
@@ -12,9 +13,10 @@
  * Remove unit from a given value.
  */
 @function strip-unit($value) {
-  @if (meta.type-of($value) == 'number' and not math.is-unitless($value)) {
+  @if  meta.type-of($value) == 'number' and not math.is-unitless($value) {
     @return math.div($value, $value * 0 + 1);
   }
+
   @return $value;
 }
 

@@ -4,8 +4,9 @@
 $primary: true;
 
 .c-button {
-  @include mixin.btn();
+  @include mixin.btn;
   @include mixin.font-size-line-height(function.rem(18px), function.rem(26px));
+
   border-radius: function.rem(15px);
   padding: function.rem(24px) function.rem(33px);
   width: 100%;
@@ -19,8 +20,8 @@ $primary: true;
   }
 
   @include mixin.from-breakpoint(md) {
-    padding: function.rem(26px) function.rem(39px);
     border-radius: function.rem(20px);
+    padding: function.rem(26px) function.rem(39px);
   }
 
   &--primary {
@@ -36,16 +37,15 @@ $primary: true;
   &--secondary {
     background-color: function.color("neutral-100");
     border: function.rem(1px) solid function.color("neutral-300");
-    box-shadow: function.rem(0px) function.rem(4px) function.rem(10px)
+    box-shadow: function.rem(0) function.rem(4px) function.rem(10px)
       rgba(function.color("neutral-300"), 0.4);
-
     color: function.color("neutral-800");
     font-weight: function.font-weight("regular");
 
     &:hover {
       background-color: function.color("neutral-800");
-      color: function.color("neutral-100");
       border-color: function.color("neutral-800");
+      color: function.color("neutral-100");
     }
   }
 
@@ -54,11 +54,13 @@ $primary: true;
       function.rem(15px),
       function.rem(24px)
     );
+
     border-radius: function.rem(10px);
     padding: function.rem(15px) function.rem(24px);
 
     @include mixin.from-breakpoint(md) {
       border-radius: function.rem(15px);
+
       @include mixin.padding-x(function.rem(18px));
     }
   }

@@ -3,6 +3,7 @@
 
 @mixin display-1 {
   @include mixin.font-size-line-height(function.rem(40px), function.rem(48px));
+
   font-weight: function.font-weight("medium");
 
   @include mixin.from-breakpoint(md) {
@@ -22,6 +23,7 @@
 
 @mixin display-2 {
   @include mixin.font-size-line-height(function.rem(35px), function.rem(43px));
+
   font-weight: function.font-weight("medium");
 
   @include mixin.from-breakpoint(md) {
@@ -41,6 +43,7 @@
 
 @mixin display-3 {
   @include mixin.font-size-line-height(function.rem(26px), function.rem(34px));
+
   font-weight: function.font-weight("medium");
 
   @include mixin.from-breakpoint(md) {
@@ -53,6 +56,7 @@
 
 @mixin display-4 {
   @include mixin.font-size-line-height(function.rem(20px), function.rem(28px));
+
   font-weight: function.font-weight("medium");
 
   @include mixin.from-breakpoint(md) {

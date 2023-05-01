@@ -1,0 +1,8 @@
+{
+  "extends": [ "stylelint-config-standard-scss"],
+  "rules": {
+    "scss/selector-no-redundant-nesting-selector": true,
+    "color-function-notation": null,
+    "scss/at-extend-no-missing-placeholder": null
+  }
+}

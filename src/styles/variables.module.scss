@@ -12,7 +12,7 @@
   Breakpoint variables for responsive design
 \* ------------------------------------------------------------ */
 $breakpoints: (
-  xs: 0px,
+  xs: 0,
   sm: 420px,
   md: 768px,
   lg: 1280px,
@@ -38,7 +38,7 @@ $colors: (
   "color-5": #ffcbd8,
   "color-6": #ffc329,
   "color-7": #fdb52a,
-  "neutral-100": #ffffff,
+  "neutral-100": #fff,
   "neutral-200": #f7f7fc,
   "neutral-300": #e2e2ed,
   "neutral-400": #c8c8d6,

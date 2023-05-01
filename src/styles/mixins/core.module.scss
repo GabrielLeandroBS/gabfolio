@@ -1,4 +1,5 @@
 @use "../variables.module.scss" as variables;
+@use "sass:map";
 
 /* ------------------------------------------------------------ *\
   Mixins Core
@@ -92,7 +93,7 @@
 
 // Display a list as inline.
 @mixin list-inline($li-margin-right: $list-inline-padding) {
-  @include list-unstyled();
+  @include list-unstyled;
 
   li {
     display: inline-block;
@@ -163,6 +164,7 @@
 // Render a circle.
 @mixin circle($width, $background-color: "") {
   @include width-height($width);
+
   border-radius: 100%;
 
   @if $background-color != "" {
@@ -175,7 +177,7 @@
   .admin-bar & {
     top: 32px + $offset;
 
-    @media screen and (max-width: 782px) {
+    @media screen and (width <= 782px) {
       top: 46px + $mobile-offset;
     }
   }
@@ -204,6 +206,7 @@
 
 @mixin center-block($width) {
   @include margin-x(auto);
+
   max-width: $width;
 }
 
@@ -221,9 +224,9 @@
 \* ------------------------------------------------------------ */
 
 @mixin from-breakpoint($breakpoint) {
-  $breakpoint-width: map-get(variables.$breakpoints, $breakpoint);
+  $breakpoint-width: map.get(variables.$breakpoints, $breakpoint);
 
-  @if $breakpoint-width == 0px {
+  @if $breakpoint-width == 0 {
     @content;
   } @else {
     @media (min-width: $breakpoint-width) {
