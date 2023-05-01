@@ -1,5 +1,5 @@
-@use "../../../styles/functions.module.scss" as function;
-@use "../../../styles/mixins/core.module.scss" as mixin;
+@use '../../../styles/functions.module.scss' as function;
+@use '../../../styles/mixins/core.module.scss' as mixin;
 
 $primary: true;
 
@@ -25,27 +25,27 @@ $primary: true;
   }
 
   &--primary {
-    background-color: function.color("neutral-800");
-    color: function.color("neutral-100");
-    font-weight: function.font-weight("bold");
+    background-color: function.color('neutral-800');
+    color: function.color('neutral-100');
+    font-weight: function.font-weight('bold');
 
     &:hover {
-      background-color: function.color("color-1");
+      background-color: function.color('color-1');
     }
   }
 
   &--secondary {
-    background-color: function.color("neutral-100");
-    border: function.rem(1px) solid function.color("neutral-300");
+    background-color: function.color('neutral-100');
+    border: function.rem(1px) solid function.color('neutral-300');
     box-shadow: function.rem(0) function.rem(4px) function.rem(10px)
-      rgba(function.color("neutral-300"), 0.4);
-    color: function.color("neutral-800");
-    font-weight: function.font-weight("regular");
+      rgba(function.color('neutral-300'), 0.4);
+    color: function.color('neutral-800');
+    font-weight: function.font-weight('regular');
 
     &:hover {
-      background-color: function.color("neutral-800");
-      border-color: function.color("neutral-800");
-      color: function.color("neutral-100");
+      background-color: function.color('neutral-800');
+      color: function.color('neutral-100');
+      border-color: function.color('neutral-800');
     }
   }
 
