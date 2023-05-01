@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./button.module.scss";
 
 const Button = ({
-  primary = false,
+  primary = true,
   size = "medium",
   label,
   url = "#",
