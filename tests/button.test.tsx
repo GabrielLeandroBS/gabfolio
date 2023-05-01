@@ -29,11 +29,10 @@ describe("Component Button", () => {
     );
 
     const linkToRedirect = getByRole("link", {
-      name: "Jest && Testing Library",
+      name: "Link to go to Jest && Testing Library page",
     });
 
     fireEvent.click(linkToRedirect);
-
     expect(window.location.pathname).toBe("/");
   });
 });

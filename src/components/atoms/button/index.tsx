@@ -9,12 +9,9 @@ const Button = ({
   label,
   url = "#",
 }: ButtonProps) => {
-  const hasPrimary = primary
-    ? styles["c-button--primary"]
-    : styles["c-button--secondary"];
-
   return (
     <Link
+      role="link"
       href={url}
       title={`Go to ${url} page`}
       aria-label={`Link to go to ${label} page`}
@@ -22,7 +19,7 @@ const Button = ({
       className={[
         styles["c-button"],
         styles["c-button--" + size],
-        hasPrimary,
+        primary ? styles["c-button--primary"] : styles["c-button--secondary"],
       ].join(" ")}
     >
       {label}
