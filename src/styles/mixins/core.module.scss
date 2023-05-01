@@ -66,8 +66,8 @@
 
 // Set width and height of the same size.
 @mixin width-height($size) {
-  height: $size;
   width: $size;
+  height: $size;
 }
 
 // Remove the default select appearance.
@@ -123,11 +123,11 @@
 
 // Position the element and fill its parent.
 @mixin position-fill($position: absolute) {
+  width: 100%;
   height: 100%;
   left: 0;
   position: $position;
   top: 0;
-  width: 100%;
 }
 
 // Position the element absolutely centered.
@@ -193,9 +193,9 @@
 }
 
 @mixin image-size($size: cover) {
+  width: 100%;
   height: 100%;
   object-fit: $size;
-  width: 100%;
 }
 
 @mixin flex-center {
