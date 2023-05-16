@@ -1,5 +1,5 @@
-@use '../../../styles/functions.module.scss' as function;
-@use '../../../styles/mixins/core.module.scss' as mixin;
+@use '../../../../styles/functions.module.scss' as function;
+@use '../../../../styles/mixins/core.module.scss' as mixin;
 
 $primary: true;
 
@@ -37,8 +37,7 @@ $primary: true;
   &--secondary {
     background-color: function.color('neutral-100');
     border: function.rem(1px) solid function.color('neutral-300');
-    box-shadow: function.rem(0) function.rem(4px) function.rem(10px)
-      rgba(function.color('neutral-300'), 0.4);
+    box-shadow: function.rem(0) function.rem(4px) function.rem(10px) rgba(function.color('neutral-300'), 0.4);
     color: function.color('neutral-800');
     font-weight: function.font-weight('regular');
 
@@ -53,10 +52,8 @@ $primary: true;
     border-radius: function.rem(10px);
     padding: function.rem(15px) function.rem(24px);
 
-    @include mixin.font-size-line-height(
-      function.rem(15px),
-      function.rem(24px)
-    );
+    @include mixin.font-size-line-height(function.rem(15px),
+      function.rem(24px));
 
     @include mixin.from-breakpoint(md) {
       border-radius: function.rem(15px);
@@ -68,10 +65,8 @@ $primary: true;
   &--large {
     padding: function.rem(22px) function.rem(41px);
 
-    @include mixin.font-size-line-height(
-      function.rem(20px),
-      function.rem(28px)
-    );
+    @include mixin.font-size-line-height(function.rem(20px),
+      function.rem(28px));
 
     @include mixin.from-breakpoint(md) {
       @include mixin.padding-x(function.rem(50px));
@@ -84,7 +79,9 @@ $primary: true;
 
   @if $primary {
     @extend .c-button--primary;
-  } @else {
+  }
+
+  @else {
     @extend .c-button--secondary;
   }
 }
