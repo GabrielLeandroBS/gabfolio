@@ -1,9 +1,9 @@
-import base from "../styles/base.module.scss";
+import base from '../styles/base.module.scss';
 
 export const metadata = {
   title: {
-    default: "Página inicial | Gabriel Leandro",
-    template: "%s | Gabriel Leandro",
+    default: 'Página inicial | Gabriel Leandro',
+    template: '%s | Gabriel Leandro',
   },
 };
 

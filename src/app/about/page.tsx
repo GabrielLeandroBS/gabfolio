@@ -1,13 +1,13 @@
-import Button from "@/components/atoms/button";
+import Button from '@/components/atoms/button';
 
 export const metadata = {
-  title: "About",
+  title: 'About',
 };
 
 const About = () => (
   <section>
     <h1>About</h1>
-    <Button label={"Go to home"} url={"/"} primary={false} size="large" />
+    <Button label={'Go to home'} url={'/'} primary={false} size="large" />
   </section>
 );
 
