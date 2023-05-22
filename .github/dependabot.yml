@@ -3,14 +3,18 @@
 # Please see the documentation for all configuration options:
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
+# dependabot.yml
+
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: "npm"  # Replace with the package ecosystem you're using (npm, pip, etc.)
+    directory: "/"  # Directory where the package manifests are located
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 10 
-    automerge:
-      enabled: true
-      commit-message:
-        prefix: "chore(deps):"
+      interval: "weekly"  # Frequency of update checks (can be "daily", "weekly", etc.)
+    automerged_updates:
+      - match:
+          dependency_type: "all"
+        automerge:
+          enabled: true  # Enable automerge for this update
+          commit_message:
+            prefix: "chore(deps):"  # Prefix to add to commit messages (optional)
